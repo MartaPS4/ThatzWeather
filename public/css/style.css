@@ -1,0 +1,22 @@
+body{
+    height: 100%;
+    background-image: url(../img/desk/d-background.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+#container{
+    text-align: center;
+    font-family: 'Muli', arial;
+    color: white;
+    font-size: 18px;
+}
+#logo{
+    margin-top:4%;
+}
+#formularioCp{
+    margin-top:8%;
+}
+#fin{
+    margin-top:6%
+}
