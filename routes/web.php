@@ -17,16 +17,13 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 }); */
 
-Route::get('/detalle', [
-    'uses' => 'myController@detalle',
-    'as' => 'detalle.tiempo'
-]);
+Route::get('/detalle','myController@detalle')->name('myController.detalle');
 
-Route::get('/redirigir', 'myController@redirigir');
+Route::get('/redirigir', 'myController@redirigir')->name('myController.redirigir');
 
-Route::get('/', 'myController@formulario');
+Route::get('/', 'myController@formulario')->name('myController.formulario');
 
-Route::post('/recibir', 'myController@recibir');
+Route::post('/recibir', 'myController@recibir')->name('myController.recibir');
 
 Route::resource('usuario', 'usuarioController');
 
